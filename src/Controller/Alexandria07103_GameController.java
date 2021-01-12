@@ -3,6 +3,8 @@ package Controller;
 import Entity.Alexandria07103_HeroEntity;
 import Entity.Alexandria07103_ItemEntity;
 import Entity.Alexandria07103_MonsterEntity;
+import View.Alexandria07103_AllObjectController;
+import javax.swing.table.DefaultTableModel;
 
 public class Alexandria07103_GameController {
 
@@ -33,9 +35,6 @@ public class Alexandria07103_GameController {
             Alexandria07103_AllObjectModel.monsterModel.insert(new Alexandria07103_MonsterEntity(namaM[i],powerM[i],healthM[i],uangM[i],karakterM[i]));
         }
     }
-    public Alexandria07103_HeroEntity showHero(int index) {
-        return Alexandria07103_AllObjectModel.heroModel.showData(index);
-    }
     public Alexandria07103_HeroEntity getDataHero(int index) {
         return Alexandria07103_AllObjectModel.heroModel.getHeroEntityArrayList(index);
     }
@@ -51,10 +50,9 @@ public class Alexandria07103_GameController {
     public void setstatsMonster(){
         Alexandria07103_AllObjectModel.monsterModel.setstats();
     }
-    public Alexandria07103_ItemEntity showItem(int index) {
-        return Alexandria07103_AllObjectModel.itemModel.showData(index);
-    }
     public Alexandria07103_ItemEntity getDataItem(int index) {
         return Alexandria07103_AllObjectModel.itemModel.getItemEntityArrayList(index);
     }
+     
+   
 }

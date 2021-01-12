@@ -26,6 +26,9 @@ public class Alexandria07103_AkunModel {
     public Alexandria07103_AkunEntity getAkunEntityArrayList(int index){
         return akunEntityArrayList.get(index);
     }
+    public ArrayList<Alexandria07103_AkunEntity> getAkunn() {
+        return akunEntityArrayList;
+    }
     
     public void delete(int index){
         akunEntityArrayList.remove(index);

@@ -3,13 +3,31 @@ public class Alexandria07103_AkunEntity {
     private String email;
     private String username;
     private String password;
-    private int uangR,umur,loop,loopP;
+    private int uangR,umur,loop,loopP,mainhero,atributP;
     public Alexandria07103_AkunEntity() {
     }
 
-    public Alexandria07103_AkunEntity(int loop, int loopL) {
+    public Alexandria07103_AkunEntity(int loop, int loopP, int mainhero,int atributP) {
         this.loop = loop;
-        this.loopP = loopL;
+        this.loopP = loopP;
+        this.mainhero=mainhero;
+        this.atributP=atributP;
+    }
+
+    public int getMainhero() {
+        return mainhero;
+    }
+
+    public void setMainhero(int mainhero) {
+        this.mainhero = mainhero;
+    }
+
+    public int getAtributP() {
+        return atributP;
+    }
+
+    public void setAtributP(int atributP) {
+        this.atributP = atributP;
     }
     
     public int getLoop() {

@@ -11,10 +11,6 @@ public class Alexandria07103_HeroModel implements Alexandria07103_CharacterGameI
     public void insert(Alexandria07103_HeroEntity hero){
         heroEntityArrayList.add(hero);}
     
-    public Alexandria07103_HeroEntity showData(int index){
-        return heroEntityArrayList.get(index);
-    }
-    
     public Alexandria07103_HeroEntity getHeroEntityArrayList(int index){
         return heroEntityArrayList.get(index);
     }
@@ -25,4 +21,8 @@ public class Alexandria07103_HeroModel implements Alexandria07103_CharacterGameI
         heroEntityArrayList.get(2).setHealth(4300);
         heroEntityArrayList.get(3).setHealth(3400);
     }
+    
+    public ArrayList <Alexandria07103_HeroEntity> datahero(){
+        return heroEntityArrayList;
+    } 
 }

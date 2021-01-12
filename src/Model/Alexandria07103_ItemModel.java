@@ -12,10 +12,10 @@ public class Alexandria07103_ItemModel {
     public void insert(Alexandria07103_ItemEntity itemEntity){
         itemEntityArrayList.add(itemEntity);
     }
-    public Alexandria07103_ItemEntity showData(int index){
-        return itemEntityArrayList.get(index);
-    }
     public Alexandria07103_ItemEntity getItemEntityArrayList(int index){
         return itemEntityArrayList.get(index);
     }
+    public ArrayList <Alexandria07103_ItemEntity> dataitem(){
+        return itemEntityArrayList;
+    } 
 }
