@@ -18,7 +18,7 @@ public class Alexandria07103_PickPotionGUI {
         pickpotion.setLayout(null);
         pickpotion.getContentPane().setBackground(Color.CYAN);
         top = new JLabel("Pick Potion");
-        top.setBounds(220, 30, 200, 30);
+        top.setBounds(220, 30, 300, 30);
         top.setFont(new Font("Timer New Roman",Font.BOLD,40));
         pickpotion.add(top);
         scrollitem.setBounds(30, 80, 570, 200);
@@ -28,10 +28,10 @@ public class Alexandria07103_PickPotionGUI {
         health.setBounds(30, 290, 200, 30);
         pickpotion.add(health);
         jmlhhealth = new JTextField();
-        jmlhhealth.setBounds(100, 290, 100, 30);
+        jmlhhealth.setBounds(230, 290, 100, 30);
         pickpotion.add(jmlhhealth);
         use = new JButton("use");
-        use.setBounds(250, 290, 100, 30);
+        use.setBounds(230, 330, 80, 30);
         use.setBackground(Color.GREEN);
         pickpotion.add(use);
         back = new JButton("back");

@@ -25,8 +25,8 @@ public class Alexandria07103_PickHeroGUI {
         top.setBounds(220, 30, 200, 30);
         top.setFont(new Font("Timer New Roman",Font.BOLD,40));
         pickhero.add(top);
-        scrollhero.setBounds(30, 80, 570, 200);
         
+        scrollhero.setBounds(30, 80, 570, 200);
         listhero.setModel(listhero());
         pickhero.add(scrollhero);
         
