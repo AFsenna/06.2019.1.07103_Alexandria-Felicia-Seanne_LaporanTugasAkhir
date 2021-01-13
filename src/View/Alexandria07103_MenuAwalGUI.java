@@ -24,7 +24,7 @@ public class Alexandria07103_MenuAwalGUI {
         shop.setBounds(30, 80, 100, 30);
         shop.setBackground(Color.getHSBColor(158, 68, 66));
         menu.add(shop);
-        pick = new JRadioButton("Pick hero");
+        pick = new JRadioButton("ARENA");
         pick.setBounds(30, 120, 100, 30);
         pick.setBackground(Color.getHSBColor(158, 68, 66));
         menu.add(pick);
