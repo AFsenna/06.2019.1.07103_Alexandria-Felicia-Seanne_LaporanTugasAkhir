@@ -66,13 +66,13 @@ public class Alexandria07103_PickPotionGUI {
             @Override
             public void mouseClicked(MouseEvent e){
                 int i = listitem.getSelectedRow();
-                jmlhhealth.setText(listitem().getValueAt(i, 0).toString());
+                jmlhhealth.setText(listitem().getValueAt(i, 1).toString());
             }
         });
     }
     public DefaultTableModel listitem(){
         DefaultTableModel dtmlistitem = new DefaultTableModel();
-        Object[] kolom ={"Potion","Atribut"};
+        Object[] kolom ={"Potion","Atribut Health + "};
         dtmlistitem.setColumnIdentifiers(kolom);
         for(int i=0;i<Alexandria07103_AllObjectController.akun.getDataAkun().getLoopP();i++){
             if(Alexandria07103_AllObjectController.game.getDataItem(i).getIndexAkun() == 
@@ -84,7 +84,7 @@ public class Alexandria07103_PickPotionGUI {
                 
             Object [] data = new Object[2];
             data[0] = Alexandria07103_AllObjectModel.itemModel.dataitem().get(Alexandria07103_AllObjectModel.heroModel.getHeroEntityArrayList(i).getIndex()).getNama();
-            data[1] = "health + "+Alexandria07103_AllObjectModel.itemModel.dataitem().get(Alexandria07103_AllObjectModel.heroModel.getHeroEntityArrayList(i).getIndex()).getHealth();
+            data[1] = Alexandria07103_AllObjectModel.itemModel.dataitem().get(Alexandria07103_AllObjectModel.heroModel.getHeroEntityArrayList(i).getIndex()).getHealth();
             dtmlistitem.addRow(data);
             }
         }
